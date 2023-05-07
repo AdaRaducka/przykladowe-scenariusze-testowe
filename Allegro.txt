@@ -1,0 +1,47 @@
+Scenariusz testowy: " Rejestracja w sklepie internetowym Allegro dla konta zwykłego" 
+
+a) Przypadek testowy 1:  Poprawna rejestracja dla osoby powyżej 18 roku życia 
+
+1. Użytkownik wybiera opcję "Konto zwykłe".
+2. W oknie e-mail wpisuje adres mailowy w poprawnej formie np. anna@gmail.com.
+3. W oknie hasło wpisuje hasło zawierające minimum 8 znaków, wielką literę, małą literą oraz cyfrę. 
+4. W sekcji "Twój wiek" wybiera pole "Mam 18 lat lub więcej". 
+5. W sekcji "Zgody i oświadczenia" wybiera tylko wymagane pola czyli: "Oświadczam, że znam i akceptuję postanowienia Regulaminu Allegro.".
+6. Użytkownik wybiera pole "Załóż konto". 
+
+Oczekiwany efekt to przekierowanie użytkownika na stronę internetową z komunikatem informującym o wysłaniu maila (na podany wcześniej adres mailowy), zawierającego potwierdzający rejestrację link.
+
+b) Przypadek testowy 2: Poprawna rejestracja dla osoby poniżej 18 roku życia 
+
+1. Użytkownik wybiera opcję "Konto zwykłe".
+2. W oknie e-mail wpisuje adres mailowy w poprawnej formie np. anna@gmail.com.
+3. W oknie hasło wpisuje hasło zawierające minimum 8 znaków, wielką literę, małą literą oraz cyfrę. 
+4. W sekcji "Twój wiek" wybiera pole "Mam mniej niż 18 lat" oraz wpisuje dokładną datę urodzenia w formie dd.mm.rr w nowym polu ukazanym po wybraniu opcji "Mam mniej niż 18 lat"
+5. W sekcji "Zgody i oświadczenia" wybiera 2 wymagane pola czyli: "Oświadczam, że znam i akceptuję postanowienia Regulaminu Allegro" oraz "Transakcje w serwisie będę zawierać za zgodą mojego opiekuna prawnego
+   Wyraź zgodę, aby założyć konto". 
+6. Użytkownik wybiera pole "Załóż konto". 
+
+Oczekiwany efekt to przekierowanie użytkownika na stronę internetową z komunikatem informującym o wysłaniu maila (na podany wcześniej adres mailowy), zawierającego potwierdzający rejestrację link.
+
+c) Przypadek testowy 3: Niepoprawna rejestracja dla osoby powyżej 18 roku życia - błędne hasło 
+
+1. Użytkownik wybiera opcję "Konto zwykłe".
+2. W oknie e-mail wpisuje adres mailowy w poprawnej formie np. anna@gmail.com. 
+3. W oknie hasło wpisuje niepoprawne hasło np. składające się z 4 znaków i niezawierające cyfr.
+4. W sekcji Twój wiek wybiera pole "Mam 18 lat lub więcej". 
+5. W sekcji Zgody i oświadczenia wybiera tylko wymagane pola czyli: "Oświadczam, że znam i akceptuję postanowienia Regulaminu Allegro".
+6. Użytkownik wybiera pole "Załóż konto". 
+
+Oczekiwany efekt to przekierowanie użytkownika ponownie do pola dotyczącego hasła oraz wyświetlenie pod nim wymagań dotyczących hasła, w tym tych niespełnionych na kolor czerwony. 
+
+
+d) Przypadek testowy 4: Niepoprawna rejestracja dla osoby powyżej 18 roku życia - błędny adres e-mail
+
+1. Użytkownik wybiera opcję "Konto zwykłe".
+2. W oknie e-mail wpisuje adres e-mail w niepoprawnej formie np. anna.gmail.com. 
+3. W oknie hasło wpisuje hasło zawierające minimum 8 znaków, wielką literę, małą literą oraz cyfrę. 
+4. W sekcji Twój wiek wybiera pole "Mam 18 lat lub więcej". 
+5. W sekcji Zgody i oświadczenia wybiera tylko wymagane pola czyli: "Oświadczam, że znam i akceptuję postanowienia Regulaminu Allegro".
+6. Użytkownik wybiera pole "Załóż konto". 
+
+Oczekiwany efekt to przekierowanie użytkownika ponownie do pola dotyczącego adresu e-mail oraz wyświetlenie pod nim komunikatu: "Niepoprawny adres e-mail".

@@ -1,0 +1,34 @@
+Scenariusz testowy: "Ścieżka zakupowa w sklepie internetowym empik.com" 
+
+a) Przypadek testowy 1: Poprawny zakup 2 płyt CD 
+
+1. Użytkownik poprawnie loguje się do sklepu internetowego empik.com.
+2. W bocznej zakładce użytkownik wybiera kategorię "Muzyka", a następnie w ukazującym się oknie podkategorię np. "Filmowa".
+3. Po wyświetleniu płyt CD użytkownik wybiera najpierw pierwszą interesującą go płytę.
+4. Następnie po wyświetleniu strony ze szczegółowym opisem płyty użytkownik wybiera opcję "Dodaj do koszyka" i cofa się do poprzedniej strony.
+5. Użytkownik wybiera drugą płytę CD.
+6. Po wyświetleniu strony ze szczegółowym opisem płyty użytkownik wybiera opcję "Dodaj do koszyka", a następnie opcję "Przejdz do koszyka" i zostaje przekierowany na stronę z wybranymi przez niego płytami. 
+7. Użytkownik wybiera pole "Wybierz sposób dostawy" i zostaje przekierowany do strony, na której wybiera sposób dostawy np. Kurier DPD, sposób płatności np. BLIK oraz sprawdza aktualność danych do wysyłki. 
+8. Po wypełnieniu i sprawdzeniu wszystkich pól użytkownik wybiera opcję "Płacę" i dokonuje płatności w wybrany wczesniej sposób. 
+
+Oczekiwany efekt to poprawne dokonanie płatności za zamówienie, przekiewonie użytkownika do strony podsumowującej je oraz otrzymanie maila potwierdzającego zakup (na wcześniej podany adres e-mail). 
+ 
+b) Przypadek testowy 2: Dodanie i usunięcie z koszyka płyty CD 
+
+1. Użytkownik poprawnie loguje się do sklepu internetowego empik.com.
+2. W bocznej zakładce użytkownik wybiera kategorie "Muzyka", a następnie w ukazującym się oknie podkategorię np. "Filmowa".
+3. Po wyświetleniu płyt CD użytkownik wybiera interesującą go płytę.
+4. Następnie po wyświetleniu strony ze szczegółowym opisem płyty użytkownik wybiera opcję "Dodaj do koszyka", a następnie opcję "Przejdz do koszyka" i zostaje przekierowany na stronę z wybraną przez niego płytą.
+5. W polu ukazującym ilość wybranych płyt CD użytkownik wybiera opcję zmniejszania (w postaci "-") ilości wybranje płyty.
+
+Oczekiwany efekt to poprawne usunięcie dodanej wczesniej do koszyka płyty i wyświetlenie strony interetowej z komunikatem "Twój koszyk jest pusty".
+
+c) Przypadek testowy 3: Próba zakupu płyty CD, której nie ma w magazynie
+
+1. Użytkownik poprawnie loguje się do sklepu internetowego empik.com.
+2. W bocznej zakładce użytkownik wybiera kategorie "Muzyka", a następnie w ukazującym się oknie podkategorię np. "Filmowa".
+3. Po wyświetleniu płyt CD użytkownik wybiera interesującą go płytę.
+4. Następnie użytkownik zostaje przekierowany na stronę ze szczegółowym opisem płyty.
+5. W polu dotyczącym dostępności płyty widnieje informacja: "Produkt niedostępny w magazynie". 
+
+Oczekiwany efekt to brak możliwości dodania do koszyka płyty, nieaktywna opcja "Dodaj do koszyka" oraz pojawienie się nowej opcji "Poinformuj o ponownej dostępności".

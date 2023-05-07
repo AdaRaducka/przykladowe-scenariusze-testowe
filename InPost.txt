@@ -1,0 +1,38 @@
+Scenariusz testowy: "Wysłanie formularza kontaktowego na stronie interetowej inpost.pl"
+
+a) Przypadek testowy 1: Wysłanie formularza kontaktowego dotyczącego szkody bez dołączania zdjęć
+
+1. Użytkownik znajduje się na stronie internetowej inpost.pl.
+2. Wybiera zakładkę "Kontakt", a następnie po wyświetleniu opcji kontaktu wybiera "Formularz kontaktowy".
+3. Po przekierowaniu na stronę formularza kontaktowego użytkownik wybiera z listy temat kontaktu, w tym przypadku "Protokół szkody". 
+4. Użytkownik zostaje przekierowany do strony formularza, na której należy podać szczegóły przesyłki: numer przesyłki, dane osoby do kontaktu oraz rodzaj towaru - nowy lub używany, rodzaj opakowania zewnętrznego,
+   rodzaj szkody, informacje o istnieniu i uszkodzeniu zabezpieczeń wewnętrznych i zewnętrznych. 
+5. Następnie użytkownik w oknie o nazwie "Opis uszkodzeń/Uwagi klienta" umieszcza opis szkody. 
+6. W polu służącym do wczytania plików (zdjęć) użytkownik ich nie umieszcza, a następnie wybiera opcję "Wyślij zgłoszenie".
+
+Oczekiwany efekt to ponowne przekierowanie użytkownika na stronę formularza kontaktowego dotyczącego szkody oraz wyświetlenie komunikatu "Zdjęcie jest wymagane". 
+
+
+b) Przypadek testowy 2: Wysłanie formularza kontaktowego dotyczącego statusu przesyłki z za długim numerem paczki
+
+1. Użytkownik znajduje się na stronie internetowej inpost.pl.
+2. Wybiera zakładkę "Kontakt", a następnie po wyświetleniu opcji kontaktu wybiera "Formularz kontaktowy".
+3. Po przekierowaniu na stronę formularza kontaktowego użytkownik wybiera z listy temat kontaktu, w tym przypadku "Status przesyłki - paczkomat". 
+4. Użytkownik zostaje przekierowany do strony formularza, na której należy podać 24-cyfrowy numer paczki. 
+5. Użytkownik wpisuje zbyt długi numer paczki np. zawierający 26 cyfr.
+6. Po podaniu numeru użytkownik wybiera opcję "Wyślij".
+
+Oczekiwany efekt to pozostanie na stronie z polem do podania numeru paczki oraz wyświetelnie pod polem komunikatu "Podaj numer 24-cyfrowy zaczynający się od 4 lub 5 lub 6 lub 9".
+
+c) Przypadek testowy 3: Wysłanie formularza kontaktowego dotyczącego pytania o Allegro InPost bez przejścia weryfikacji reCAPTCHA
+
+1. Użytkownik znajduje się na stronie internetowej inpost.pl.
+2. Wybiera zakładkę "Kontakt", a następnie po wyświetleniu opcji kontaktu wybiera "Formularz kontaktowy".
+3. Po przekierowaniu na stronę formularza kontaktowego użytkownik wybiera z listy temat kontaktu, w tym przypadku "Pytanie dot. Allegro InPost". 
+4. Użytkownik zostaje przekierowany do strony formularza, na której należy podać szczegóły dotyczące pytania: imię, nazwisko, e-mail osoby wypełniającej formularz, numer przesyłki oraz treść pytania w polu "Zadaj pytanie".
+5. Następnie użytkownik bez przejścia weryfikacji reCAPTCHA (bez zaznaczenia opcji "Nie jestem robotem") wybiera opcję "Wyślij".
+
+Oczekiwany efekt to pozostanie na stronie formularza oraz pojawienie się komunikatu "Select 'I'm not a robot". 
+
+
+
